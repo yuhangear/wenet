@@ -143,6 +143,7 @@ add_library(decoder STATIC
   decoder/ctc_endpoint.cc
   decoder/torch_asr_decoder.cc
   decoder/torch_asr_model.cc
+  decoder/hw_scorer.cc
 )
 target_link_libraries(decoder PUBLIC ${TORCH_LIBRARIES} kaldi-decoder utils post_processor)
 
